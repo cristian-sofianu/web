@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Webservice</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        fetch('https://github.com/cristian-sofianu/web/webservice.php')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('result').textContent = data;
+            });
+    </script>
+</body>
+</html>
